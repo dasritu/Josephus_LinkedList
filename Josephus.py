@@ -61,9 +61,6 @@ class circular:
         temp.ref=newnode
 
     def del_beg(self):
-        # temp=self.head
-        # temp1=temp.ref
-        # self.head=temp1
         temp=self.head
         second=self.head.ref
         if temp.ref==self.head:
@@ -132,11 +129,6 @@ class circular:
             temp=temp.ref
             c+=1
         return temp
-    # def getKthNode(start, k):
-    #    temp = start
-    #    for i in range(1, k):
-    #       temp = temp.ref
-    #    return temp
     def isLastNode(self):
       if self.head.ref == self.head:
          return True
@@ -152,7 +144,6 @@ class circular:
                  c+=1
              prev.ref=temp.ref
              temp=temp.ref
-             #self.display()
         return temp.data
     def display(self):
         if self.head==None:
